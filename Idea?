@@ -1,0 +1,65 @@
+
+  Esa reflexión que acabáis de hacer en la mesa es la clave absoluta para ganar la hackatón: los jurados penalizan los "portales web tradicionales con un
+  chatbot encima" (tipo InfoJobs rural + ChatGPT), pero premian con las máximas puntuaciones a los sistemas de agentes autónomos que toman decisiones y
+  ejecutan tareas complejas.
+
+  He transformado vuestra idea en un verdadero ecosistema de agentes llamado ArraigoAI: Ecosistema Multiagente Autónomo de Repoblación, Matching y
+  Asentamiento Rural.
+
+  Tienes todo el desarrollo con las 13 dimensiones de negocio y el guion del pitch en
+  .gemini/antigravity-cli/brain/c602e5da-80bc-4750-a8b5-df185d525036/propuesta_arraigo_agentes_repoblacion.md.
+  ──────
+  ¿Cómo transformar vuestra idea en un Agente que "hace cosas" y toma decisiones?
+
+  En lugar de que sea una web donde el usuario busca en un mapa y lee ofertas pasivas, el sistema se compone de 3 agentes activos que trabajan en segundo
+  plano:
+
+┌─────────────────────────────────────────────┐   ┌───────────────────────────────────────────┐   ┌───────────────────────────────────────────────────┐
+│                                             │   │                                           │   │                                                   │
+│ Agente del Pueblo (Crea 'Paquetes Vitales') ├──►│ Agente Matchmaker (Decide compatibilidad) ├──►│ Agente de Asentamiento (Tramita papeleo y ayudas) │
+│                                             │   │                                           │   │                                                   │
+└─────────────────────────────────────────────┘   └───────────────────────────────────────────┘   └───────────────────────────────────────────────────┘
+                                                                        ▲
+                                                                        │
+┌─────────────────────────────────────────────┐                         │
+│                                             │                         │
+│  Agente Concierge (Entrevista al Ciudadano) ├─────────────────────────┘
+│                                             │
+└─────────────────────────────────────────────┘
+
+  1. El Agente del Pueblo (El "Director de RRHH" del Ayuntamiento)
+
+  • La tarea autónoma: Los alcaldes no saben redactar ofertas ni tienen tiempo para publicar en webs.
+  • Qué hace el agente: El alcalde habla por voz con el agente ("Se nos jubila el panadero y tenemos la casa del médico vacía"). El agente:
+      1. Audita el patrimonio municipal disponible (vivienda a 50€/mes).
+      2. Cruza con la base de datos de la comunidad autónoma y añade automáticamente una ayuda pública de 10.000€ por fijación rural.
+      3. Convierte la necesidad en un "Paquete de Vida" irresistible: Panadería equipada sin traspaso + Vivienda municipal + 10.000€ de subvención.
+
+
+  2. El Agente Matchmaker (Toma de Decisiones de Arraigo)
+
+  • La decisión autónoma: El 60% de los urbanitas que se van a un pueblo abandonan en 6 meses por frustración (expectativas irreales, soledad en
+  invierno).
+  • Qué hace el agente: No hace un filtro tonto por palabras clave. Evalúa la viabilidad real:
+      • Si el candidato teletrabaja y necesita 1 Gbps, el agente verifica la cobertura real de fibra del pueblo.
+      • Si tienen hijos pequeños, verifica las plazas de la escuela rural más cercana.
+      • Genera un "Índice de Probabilidad de Arraigo" (0-100%) para recomendar solo a candidatos con alta probabilidad de éxito comunitario.
+
+
+  3. El Agente de Asentamiento y Burocracia (Automatización)
+
+  • La ejecución real: Cuando hay match, el agente resuelve la parálisis burocrática:
+      1. Redacta el borrador legal del contrato de alquiler municipal o cesión del negocio.
+      2. Genera los formularios oficiales de empadronamiento y cambio de médico.
+      3. Prepara la solicitud de la subvención oficial del Reto Demográfico.
+
+  ──────
+  Por qué esto encaja al 100% en "La IA como Servicio":
+
+  • Quién paga (B2G): Las Diputaciones Provinciales (Soria, Teruel, Cuenca, etc.) y los Gobiernos Autonómicos pagan entre 1.500€ y 3.000€ por cada
+  familia asentada con éxito con cargo a los fondos europeos NextGeneration EU del Reto Demográfico.
+  • Factor "WOW" en el Pitch (3 min):
+      1. Mostráis al alcalde de un pueblo ficticio hablando en 10 segundos para publicar una necesidad.
+      2. El agente estructura el "Paquete Vital" completo con vivienda y ayudas públicas.
+      3. Una usuaria interactúa, el agente calcula el índice de compatibilidad (92%) y descarga en directo el contrato municipal y la solicitud de
+      empadronamiento listos para firmar.
