@@ -1,0 +1,97 @@
+## Veredicto crítico
+
+**ArraigoAI es una buena narrativa de hackatón, pero como producto real está sobredimensionado.** El dolor es real y bien identificado, pero la propuesta mezcla tres cosas distintas: **información verificada**, **matching** y **automatización burocrática/legal**. Las tres son valiosas; juntas en 24 h son peligrosas. El mayor riesgo es confundir *“índice de arraigo”* con una predicción validada, y *“documentos listos para firmar”* con asesoramiento legal automatizado.
+
+La idea gana si se reformula como: **un servicio asistido por IA que reduce el riesgo y la fricción de mudarse al pueblo, con un humano validando las decisiones críticas**. No como “tres agentes autónomos que resuelven la despoblación”.
+
+---
+
+## 1. Qué mantengo de la idea
+
+| Elemento | Por qué mantenerlo |
+|---|---|
+| **El dolor del alcalde como cuello de botella** | Es concreto, creíble y fácil de demostrar. Un alcalde sin RRHH ni marketing no puede gestionar cientos de llamadas. |
+| **El “Paquete Vital” estructurado** | Muy buena unidad de valor: vivienda + negocio/empleo + ayudas + servicios. Es vendible y visual. |
+| **El perfil del joven con miedo logístico** | “¿Habrá fibra? ¿Colegio? ¿Y si fracaso?” es el insight emocional correcto. |
+| **El match explicable, no solo un porcentaje** | Si muestras razones a favor, riesgos y mitigaciones, generas confianza. |
+| **La automatización de borradores documentales** | Como *pre-rellenado y checklist*, no como documento legal final. Ahorra fricción real. |
+| **El modelo B2G con diputaciones/comarcas** | Es más realista que cobrar a ayuntamientos de 200 habitantes. |
+| **El enfoque AIaaS/API** | Permite vender el servicio a programas de repoblación existentes sin construir marca consumer. |
+
+---
+
+## 2. Qué cambio y por qué
+
+| Cambio | Razón crítica |
+|---|---|
+| **De “3 agentes autónomos” a “1 orquestador con 3 roles asistidos”** | Para el MVP no necesitas autonomía real. Necesitas un flujo fiable: entrevista → estructura → verificación → match → borradores. Vender “agentes” está bien; implementar autonomía total, no. |
+| **De “Índice de Probabilidad de Arraigo” a “Índice de Compatibilidad y Plan de Mitigación”** | No hay datos históricos para validar una probabilidad. Un 92 % suena a ciencia falsa. Mejor: score explicable + riesgos + acciones. |
+| **De “audita en tiempo real fibra, colegio, hospital” a “consulta fuentes y marca pendiente de verificación”** | Muchos datos no están disponibles en tiempo real o están fragmentados. La IA no debe inventar plazas escolares ni cobertura exacta. |
+| **De “contrato y solicitud listos para firmar” a “borrador + checklist + derivación a secretario/gestor”** | Un contrato municipal y un expediente de subvención requieren revisión legal y firma. Automatizar de más genera riesgo jurídico y reputacional. |
+| **De “success fee por familia asentada 6 meses” a “fee fijo por comarca/piloto o pago por servicio de acompañamiento”** | El success fee puede chocar con contratación pública, incentivar matches precipitados y es difícil de verificar. Mejor modelo: piloto B2G + SaaS + servicios. |
+| **De “5.000 municipios” a “1 comarca piloto con 3–5 pueblos”** | El mercado total no es el mercado servible. La venta pública es lenta; empieza con una diputación o grupo de acción local. |
+| **De “web con mapa interactivo” a “chat + fichas verificadas + mapa como apoyo”** | El mapa impacta, pero lo que convence es el flujo: necesidad → paquete → match → documentos. El mapa no debe ser el producto. |
+| **De “joven teletrabajador genérico” a “perfil concreto: pareja, uno teletrabaja, otro necesita empleo local, con o sin hijos”** | El fracaso rural suele venir por empleo de la pareja, escuela, sanidad y aislamiento. El matching debe cubrir eso. |
+| **De “IA lo hace todo” a “IA + concierge humano en casos sensibles”** | La confianza y la mediación de expectativas no se automatizan bien. Un humano validando casos críticos es un features, no un fallo. |
+| **De “NextGeneration EU como fuente segura” a “fondos y programas concretos, con fecha y fuente”** | Los fondos cambian. Mostrar una ayuda sin fuente ni fecha es alucinación institucional. |
+
+---
+
+## 3. Viabilidad
+
+| Dimensión | Veredicto | Comentario |
+|---|---|---|
+| **Técnica para demo 24 h** | **Alta** | FastAPI + SQLite + LLM + React + Leaflet es suficiente. Con datos mock y fallback, la demo puede ser muy sólida. |
+| **Técnica como producto real** | **Media** | Integrar datos de fibra, colegios, vivienda municipal y subvenciones es fragmentado y cambiante. Requiere acuerdos de datos y verificación humana. |
+| **Legal** | **Media-baja** | Contratos, empadronamiento y subvenciones son sensibles. GDPR, contratación pública y responsabilidad documental exigen revisión. |
+| **Comercial B2G** | **Media-baja** | Diputaciones y comarcas tienen presupuesto y programas, pero ciclos de venta largos y licitaciones. Un hackatón no valida ventas. |
+| **Impacto real** | **Medio** | Puede reducir fricción y abandono, pero no crea empleo, vivienda ni plazas escolares. Sin oferta real, el match es cosmético. |
+| **Moat** | **Medio** | El algoritmo no es defensa. La defensa son acuerdos de datos, plantillas legales revisadas, confianza institucional y red de comarcas. |
+| **Unit economics** | **Inciertas** | LLM barato; lo caro es verificación, soporte humano y venta pública. El SaaS de 150–290 €/mes por comarca puede ser bajo si incluye acompañamiento. |
+
+**Conclusión de viabilidad:** excelente para **demo y piloto**, dudosa como **plataforma nacional automatizada**. La versión ganadora es un **MVP de una comarca con datos reales y revisión humana**.
+
+---
+
+## 4. Imprescindible vs. prescindible
+
+### Imprescindible para el MVP/demo
+
+1. **Un caso end-to-end realista**: un pueblo, un alcalde, un joven/pareja, un paquete vital, un match y unos borradores.
+2. **Datos con fuente y fecha**: “fibra según operadora X”, “ayuda según boletín Y”, “vivienda municipal según ayuntamiento”. Sin fuentes, es humo.
+3. **Score explicable**: dimensiones, pesos, razones a favor, riesgos y mitigaciones. Nada de porcentaje mágico.
+4. **Documentos como borrador**: contrato plantilla, solicitud de empadronamiento y checklist de subvención, con aviso “revisión humana”.
+5. **Human-in-the-loop**: el secretario/gestor valida; la IA pre-rellena.
+6. **Fallback determinista**: si el LLM falla, respuesta cacheada. La demo no puede caerse.
+7. **Privacidad y consentimiento**: datos ficticios en demo; en producto, anonimización antes de LLM.
+8. **Un payer claro**: diputación/comarca, no ayuntamiento diminuto.
+9. **Métrica de éxito honesta**: tiempo ahorrado al alcalde, documentos pre-rellenados, entrevistas cualificadas, no “familias salvadas” sin evidencia.
+
+### Prescindible para el MVP (y para el pitch)
+
+1. **Los “3 agentes autónomos” como arquitectura real**: basta un orquestador con prompts y roles.
+2. **Entrevista por voz**: texto con prompts guiados es suficiente y más fiable.
+3. **Auditoría “en tiempo real” de fibra/colegio/hospital**: usa datos mock verificados y marca “pendiente”.
+4. **Generación de PDF legal complejo**: Markdown renderizado + descarga es suficiente.
+5. **Success fee detallado**: en pitch, menciona modelo B2G; no lo defiendas como contrato cerrado.
+6. **Check-ins 30/60/90**: roadmap, no demo.
+7. **Las 13 dimensiones del canvas en la demo**: resumen en 1 slide; no las presentes todas.
+8. **Mapa interactivo complejo**: un mapa simple con 3 pueblos basta.
+9. **Scraping real de subvenciones**: usa 2–3 ayudas precargadas con fuente.
+10. **Escalabilidad a 5.000 municipios**: pitch, no MVP.
+
+---
+
+## 5. Reformulación recomendada para el hackatón
+
+**ArraigoAI no predice el arraigo.** Reduce el riesgo de fracaso con:
+- un **paquete vital verificado**,
+- un **match explicable**,
+- y la **burocracia pre-resuelta como borrador**.
+
+El pitch de 3 minutos debería ser:
+1. **Dolor:** alcalde sin tiempo + joven con miedo logístico + webs estáticas que fracasan.
+2. **Demo:** alcalde describe necesidad → paquete vital con fuente → joven introduce perfil → match 87 % con riesgos y mitigaciones → clic genera borradores.
+3. **Negocio:** piloto con una diputación/comarca; SaaS + servicios; escalable vía API a programas de repoblación. El success fee, como roadmap y con matices legales.
+
+**Frase final:** *“No automatizamos la decisión de mudarse; automatizamos la información, el matching explicable y la fricción burocrática para que la decisión sea menos arriesgada.”*
