@@ -1,0 +1,40 @@
+ Lo más crucial que debéis saber sobre el proyecto:
+
+  1. Por qué es una joya de proyecto (Las grandes ventajas)
+
+  • Ataca el verdadero cuello de botella: En una catástrofe (DANA de Valencia con 19.821 llamadas para 4.770 incidentes), el problema no son los recursos
+  de bomberos en la calle, son las líneas telefónicas colapsadas.
+  • Nadie más hace "Información Nueva en Duplicados": Los competidores comerciales (Prepared, Carbyne) transcriben o descartan duplicados. Copiloto 112
+  es el único que detecta si la 5ª llamada sobre el mismo coche atrapado dice "hay un bebé dentro" y eleva la prioridad al instante.
+  • Modelo B2B impecable (Quién Paga): No intentáis venderle a la administración pública (que tarda 3 años en licitar). Se vende al contratista privado
+  que concursa en los pliegos del 112 (empresas como Ilunion, Serveo, Telefónica Soluciones), porque el pliego les puntúa las soluciones de software de
+  IA y les multa si los tiempos de espera superan los 5 segundos.
+  • Cumple la Ley de IA de la UE por diseño: Al ser emergencias, es un sistema de Alto Riesgo. La solución está blindada legalmente porque es 100% local
+  (sin enviar datos de salud a la nube de OpenAI), con humano en el bucle (el operador siempre aprueba en la zona gris con atajos de teclado M/D) y
+  registro auditable.
+  ──────
+  Las 2 grandes preguntas trampa que os hará el Jurado (Y cómo responderlas):
+
+  1. "¿Y si la IA se equivoca y fusiona dos coches distintos a 300 metros y una persona muere?"
+      • Vuestra respuesta: La fórmula exige un umbral estricto de ≥ 0.78 para fusionar automáticamente y el tipo de incidente debe coincidir. Si hay la
+      menor duda (score entre 0.45 y 0.78), va a la Zona Gris y salta una alerta ámbar para que decida el operador humano. En el benchmark con las 26
+      llamadas de la DANA hay exactamente 0 fusiones erróneas.
+  2. "El estudio Corti (JAMA 2021) demostró que la IA no mejoró la atención de los operadores del 112 porque ignoraban las alertas."
+      • Vuestra respuesta: Ese estudio evaluaba pop-ups invasivos que intentaban diagnosticar paradas cardiacas e interrumpían al operador. Nosotros no
+      diagnosticamos: nos limitamos a agrupar duplicados en segundo plano para liberar líneas y ordenar la cola por riesgo vital.
+
+  ──────
+  3 Mejoras de Alto Impacto que podéis implementar hoy:
+
+  Para convertir el trabajo de una noche en un proyecto redondo para el jurado:
+
+  1. Panel Comparativo en Vivo ("Con Copiloto vs Sin Copiloto"):
+      • Añadir una barra o gráfica visual donde se vea cómo, ante una avalancha de llamadas de la DANA, una sala tradicional acumula 20 llamadas en
+      espera y 4 minutos de retraso, mientras que con el Copiloto el tiempo medio de respuesta baja a 8 segundos y la llamada en árabe del infarto se
+      atiende de inmediato.
+  2. Canal Silencioso Multimodal (WhatsApp / SMS con foto):
+      • En inundaciones reales, la gente no puede hablar si el agua les llega al cuello; mandan mensajes con fotos. Demostrar que el copiloto procesa una
+      foto de un coche con agua por las ventanillas y le asigna prioridad máxima de rescate.
+  3. Ensayo milimétrico del Pitch:
+      • El guion de 3 minutos de vuestro compañero en Talent-Land/docs/PITCH.md está cronometrado a la perfección. Con ensayarlo 3 o 4 veces tenéis
+      asegurada la mejor presentación del evento.
