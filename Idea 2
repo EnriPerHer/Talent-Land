@@ -1,0 +1,85 @@
+Para entender TerraGuard en profundidad, imagínalo con esta metáfora:
+
+  │ En una gran ciudad hay policía municipal patrullando, parques de bomberos a 5 minutos, técnicos de agua de guardia 24h y el 112 en la esquina.
+  │ En un pueblo de 150 habitantes no hay nadie.
+  │ El alcalde está trabajando con el tractor, el médico viene una vez a la semana, la ambulancia está a 45 minutos y el monte rodea las casas. Cuando
+  │ ocurre una adversidad, el pueblo está solo.
+
+  TerraGuard es el Centro de Operaciones y Ángel de la Guarda Digital del pueblo: un agente de IA que conecta la información del territorio (satélites,
+  estaciones del tiempo, depósitos de agua) con los propios vecinos (que actúan como sensores con su móvil) para detectar, decidir y actuar ante
+  emergencias y averías críticas en minutos, no en días.
+  ──────
+  ¿Cómo lo vive la gente en el pueblo? (Cero fricción)
+
+  Nadie en el pueblo tiene que instalarse una app rara ni aprender nada nuevo. El pueblo tiene un número de WhatsApp / Teléfono de Emergencias y
+  Protección Comarcal:
+
+    [ Vecino ve algo raro ]
+              ↓ (Manda foto, audio o texto a WhatsApp)
+    [ Cerebro del Agente IA TerraGuard ]
+              ↓ (Analiza en 2 segundos, cruza datos y toma decisiones)
+    [ Activa la solución: Bomberos, 112, Alguacil, Cuba de Agua o Aviso Vecinal ]
+  ──────
+  Los 3 Escenarios Reales del Día a Día:
+
+  1. Caso FUEGO: De "el monte arde durante 1 hora sin que nadie sepa dónde" a "alerta precisa en 30 segundos"
+
+  • Qué pasa hoy: Un agricultor ve humo a lo lejos en la sierra. Llama al 112, le preguntan "¿En qué punto kilométrico está?", el hombre no sabe explicar
+  las coordenadas exactas, la brigada sale hacia el valle equivocado y el fuego gana 40 minutos vitales.
+  • Con TerraGuard:
+      1. El agricultor manda una foto rápida de la columna de humo al WhatsApp del pueblo.
+      2. La IA analiza la imagen con visión por computador, extrae el punto GPS exacto de la foto, cruza con la dirección del viento de la AEMET y
+      calcula la velocidad de propagación.
+      3. Decisión autónoma del agente:
+          • Envía la ficha técnica a los bomberos forestales con las coordenadas de acceso exactas por pista forestal.
+          • Si el fuego amenaza al pueblo, calcula la ruta de escape segura y manda un mensaje masivo a los vecinos: "Alerta: fuego en el monte Norte. Si
+          tenéis que evacuar, hacedlo por la carretera Sur hacia la nacional; la pista del río está cortada por el humo".
+
+
+  ──────
+  2. Caso AGUA Y SUMINISTROS: De "el pueblo pasa 3 días sin agua potable" a "detección y cuba automática"
+
+  • Qué pasa hoy: En agosto, con el pueblo lleno de veraneantes, el depósito de agua municipal se vacía por una fuga o la captación se seca. Los vecinos
+  abren el grifo, no sale nada. Nadie sabe dónde está el fontanero de la comarca, el alcalde no tiene el teléfono de emergencias de la Diputación y el
+  pueblo pasa el fin de semana sin ducharse ni cocinar.
+  • Con TerraGuard:
+      1. El sensor de nivel del depósito (o 3 avisos de vecinos por WhatsApp diciendo "no sale agua en la calle Alta") activan al agente.
+      2. La IA detecta la anomalía: el consumo supera en un 300% la capacidad de recarga (indica rotura de tubería principal).
+      3. Acción autónoma del agente:
+          • Envía un aviso urgente al técnico comarcal señalando el tramo probable de la fuga.
+          • Solicita automáticamente a la Diputación el envío de un camión cisterna de agua potable para que llegue esa misma tarde.
+          • Avisa a todos los vecinos por audio/texto de las horas de reparto del agua.
+
+
+  ──────
+  3. Caso ACCIDENTE O INFARTO: "La Hora de Oro" donde la ambulancia tarda 50 minutos
+
+  • Qué pasa hoy: Un vecino de 70 años sufre un desvanecimiento o un corte grave con una motosierra en el huerto. Su mujer llama al 112 angustiada. La
+  UVI móvil más cercana está en la capital comarcal a 45 km. En esos 45 minutos el vecino está desatendido y puede morir.
+  • Con TerraGuard:
+      1. La mujer manda un audio de voz desesperada al bot del pueblo: "¡Paco se ha caído en el huerto de las eras y no respira bien!".
+      2. El agente procesa el audio, activa el protocolo de emergencia vital y, a la vez que da aviso al 112, actúa localmente:
+          • Localiza a través de su registro a la persona del pueblo con conocimientos sanitarios más cercana (ej. la maestra o el cartero que hicieron
+          curso de socorrismo) y le manda una alerta push de rescate.
+          • Indica por voz a la mujer cómo poner a su marido en posición lateral de seguridad paso a paso, con voz serena y sin colgar.
+
+
+  ──────
+  ¿Por qué esto es "IA como Servicio" (AIaaS)?
+
+  No es una web pasiva de noticias ni una simple base de datos:
+
+  1. Razona y analiza datos no estructurados: Convierte una foto borrosa de un monte o un audio con ruido en decisiones técnicas inmediatas.
+  2. Toma decisiones en segundos: Decide qué protocolo activar, qué caminos de evacuación son seguros y si una incidencia es una tontería o una
+  catástrofe inminente.
+  3. Se vende como servicio B2G (Business-to-Government):
+      • El cliente que paga es la Diputación Provincial (Diputación de Teruel, Soria, Cuenca, etc.) o la Mancomunidad comarcal.
+      • Cuesta una cuota anual por comarca (ej. 20.000€/año) financiada por los Fondos Europeos de Protección Civil y Reto Demográfico.
+      • A la Diputación le ahorra millones: apagar un incendio en los primeros 20 minutos cuesta 2.000€; apagarlo cuando ya ha quemado 500 hectáreas
+      cuesta 1.500.000€.
+
+  ──────
+  En resumen:
+
+  Es el sistema que cuida, vigila y responde ante los mayores problemas de la España vaciada (fuego, agua, aislamiento y emergencias) utilizando la
+  herramienta que ya tienen todos en el bolsillo: su móvil y WhatsApp.
